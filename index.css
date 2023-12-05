@@ -1,0 +1,169 @@
+body{margin:0;font-family:Verdana,sans-serif;line-height:1.5;}
+html{font-size: 16px;}
+.gridItem{padding: 10px;box-sizing: border-box;}
+
+.gridContainer{
+    width: 100%;background: rgb(211, 211, 211);margin: 0px auto;
+/* Config do display */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2px;
+    grid-template-areas:
+        "nav     nav    nav"
+        "header header header"
+        "main   main    main"
+        "footer footer footer"
+}
+/* nav-menu */
+.nav{grid-area: nav;  background-color: rgb(29, 29, 32);position: fixed;
+    z-index: 1;width: 100%;}
+.w3-col{float:left;color: #ece909;width:24.99999%;text-align: center;}
+.w3-button{border:none;display:inline-block;padding:2px 4px;
+    vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;
+    background-color:inherit;text-align:center;font-size: .6rem;
+    cursor:pointer;white-space:nowrap;margin:auto;font-weight: 800;}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+
+/* header */
+.header{grid-area: header;  background-position: center;background-size: cover;
+    margin-top: 2.9rem; background-image: url(fachada_ipc\ \(4\).jpg);
+    height: 20rem;position: relative;}
+.logotrans{position:absolute;top:5%;width: 25%}
+.w3-tag1{width:40%; background-color:#000;color:#fff;display:inline-block;
+    padding-left:8px;padding-right:8px;text-align:center;font-size: .8rem;}
+.w3-display-bottomleft{position:absolute;left:0;bottom:0;width:10rem;text-align:center}
+.w3-display-bottomright{position:absolute;right:0;bottom:0;width:10rem;text-align:center}
+    
+    /* main */
+.main{grid-area: main;margin: 0;padding-top: 0;}
+    
+    /* sobre nós */
+.w3-content{background-color: #b9b1b1}
+h5{font-size:1em;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;
+    text-align: center;margin: 0;}
+.w3-content p{padding: 10px}
+.w3-tag{width:40%; background-color:#000;color:#fff;display:inline-block;
+    padding-left:8px;padding-right:8px;text-align:center;margin-top: 3.2rem;
+    font-size: 1.2rem;}
+.apresentacao{text-align: justify;padding: 10px 10px;text-indent: 20px;
+    margin-bottom: 5px;}
+.w3-leftbar{background-color:rgb(145, 137, 137);
+    border-left:6px solid #312b2b!important}
+.w3-leftbar p{text-indent: 20px; text-align: justify;}
+.w3-leftbar a{text-decoration: none;color:#3038a5}
+.nomeDiretor{font-size:medium}
+.fotoDiretor{margin: auto;}
+            
+/* parceiros */
+.w3-unidades{padding:.5rem; font-size: 2rem;margin: 0;margin-top: 1rem;
+    background-color: #312b2b;height: 3rem; box-sizing: border-box!important}
+.partner{float:left;color: #ece909;width:50%;text-align: center;}
+.partner2{float:left;color: #ece909;width:50%;text-align: center;background-color: #554c4c;}
+.menu{display: none; text-align: center;}
+h4{margin: 0 10px;font-size: 2rem;}
+.w3-padding-48{padding-top:1rem!important;font-size: 2rem;margin-top: 0;margin-bottom: 0;
+    padding-bottom:1rem!important}
+.fotoGuarita{width:100%;height: auto;margin-top:10px}
+    
+    /* contato */
+.w3-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.w3-padding-16{padding-top:16px!important;padding-bottom:16px;box-sizing: border-box!important}
+.w3-border{border:1px solid #ccc!important}
+.maps{height:30rem}
+.w3-tag3{width:60%; background-color:#000;color:#fff;display:inline-block;
+    padding-left:8px;padding-right:8px;text-align:center;font-size: 1.8rem;}
+.w3-button1{border-radius: 10px;padding: 10px;}    
+.w3-button1:disabled{cursor:not-allowed;opacity:0.3}
+.w3-button1{border:none;display:inline-block;padding:2px 4px;
+    vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;
+    background-color:inherit;text-align:center;font-size: .6rem;
+    cursor:pointer;white-space:nowrap;margin:auto;font-weight: 800;}
+.w3-button1:hover{color:#000!important;background-color:#ccc!important}
+.w3-text-grey,.w3-hover-text-grey:hover,.w3-text-gray,.w3-hover-text-gray:hover{color:#757575!important}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+form{width: 70%;margin: auto;}
+
+    /* footer */
+.footer{grid-area: footer;margin: 0;background-color: rgb(29, 29, 32);
+    padding: 10px;text-align: center;}
+.Pfooter{font-size: .8rem;color: #fff;text-align: center;}
+.logopenal{width: 20%}
+.colunas{padding: 0px;margin: 0px;font-size: .5rem;}
+.coluna1{float: left;width: 50%;padding: 0px;margin: 0px;color: #fff;}
+
+@media screen and (max-width:499px){
+.w3-button{font-size: .6rem;}
+.header{height: 30rem;}
+.logotrans{margin-top:5%;width: 30%}
+.w3-tag1{width:90%}
+.w3-display-bottomleft{width:8rem}
+.w3-display-bottomright{width:8rem}
+.colunas{font-size: .5rem;}
+.w3-tag{margin-top: 5rem}
+.logopenal{width: 20%}
+.w3-padding-48{font-size: 1rem!important}
+.w3-tag3{width:55%;font-size: 1rem;}
+.partner{font-size: 1.5rem;}
+.partner2{font-size: 1.5rem;}
+h4{font-size: 1.5rem;}
+.fotoCoelho{display: none;}
+.fotoDiretor{text-align: center;}
+.fotoGuarita{display: none;}
+.fotoGuaritaSmart{width: 100%;}
+}
+
+@media screen and (min-width:500px) and (max-width: 799px){
+.w3-button{font-size: 1rem;}
+.header{height: 30rem;}
+.logotrans{margin-top:5%;width: 15%}
+.w3-tag1{width:60%}
+.w3-display-bottomleft{width:15rem}
+.w3-display-bottomright{width:15rem}
+.colunas{font-size: .8rem;}
+.w3-tag{margin-top: 5rem}
+.logopenal{width: 10%}
+.fotoCoelho{display: none;}
+.w3-padding-48{font-size: 1.5rem!important}
+.w3-tag3{width:45%;font-size: 1.3rem;}
+.fotoDiretor{text-align: center;}
+.fotoGuarita{display: none;}
+.fotoGuaritaSmart{width: 100%;}
+}
+
+@media screen and (min-width:800px) and (max-width: 1199px){
+.w3-button{font-size: 1.5rem;}    
+.header{height: 40rem;}
+.logotrans{margin-top:5%;width: 15%}
+.w3-tag1{width:60%}
+.w3-display-bottomleft{width:15rem}
+.w3-display-bottomright{width:15rem}
+.w3-tag3{width:30%;font-size: 1.5rem;}
+.w3-button1{font-size: 1rem;}
+.Pfooter{font-size: 1rem;}
+.colunas{font-size: 1rem;}
+.logopenal{width: 10%}
+.w3-tag{margin-top: 5rem}
+.fotoDiretor{text-align: center;}
+.fotoCoelhoSmart{display: none;}
+.w3-padding-48{font-size: 1.5rem!important}
+.fotoGuaritaSmart{display: none;}
+}
+
+@media screen and (min-width:1200px){
+.w3-button{font-size: 1.5rem;}    
+.header{height: 55rem;}
+.logotrans{margin-top:5%;width: 15%}
+.w3-tag1{width:80%;font-size: 1rem;}
+.w3-display-bottomleft{width:30rem}
+.w3-display-bottomright{width:30rem}
+.w3-tag3{width:25%}
+.w3-button1{font-size: 1rem;}
+.Pfooter{font-size: 1rem;}
+.colunas{font-size: 1rem;}
+.logopenal{width: 5%}
+.w3-tag{margin-top: 5rem}
+.fotoDiretor{text-align: center;}
+.fotoCoelhoSmart{display: none;}
+.fotoGuaritaSmart{display: none;}
+}
