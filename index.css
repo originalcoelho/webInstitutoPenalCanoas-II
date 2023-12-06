@@ -27,7 +27,7 @@ html{font-size: 16px;}
 
 /* header */
 .header{grid-area: header;  background-position: center;background-size: cover;
-    margin-top: 2.9rem; background-image: url(fachada_ipc.jpg);
+    margin-top: 2.9rem; background-image: url(fachada.jpg);
     height: 20rem;position: relative;}
 .logotrans{position:absolute;top:5%;width: 25%}
 .w3-tag1{width:40%; background-color:#000;color:#fff;display:inline-block;
